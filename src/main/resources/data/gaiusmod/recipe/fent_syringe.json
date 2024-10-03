@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "gaiusmod:fent"
+    },
+    "B": {
+      "item": "minecraft:iron_ingot"
+    },
+    "C": {
+      "item": "minecraft:glass_pane"
+    }
+  },
+  "pattern": [
+    "CAC",
+    "CAC",
+    " B "
+  ],
+  "result": {
+    "count": 1,
+    "id": "gaiusmod:fent_syringe"
+  }
+}

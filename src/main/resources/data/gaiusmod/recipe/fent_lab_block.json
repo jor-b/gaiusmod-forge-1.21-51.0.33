@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:iron_ingot"
+    },
+    "C": {
+      "item": "minecraft:copper_block"
+    }
+
+  },
+  "pattern": [
+    "   ",
+    "B B",
+    "BCB"
+  ],
+  "result": {
+    "count": 1,
+    "id": "gaiusmod:fent_lab_block"
+  }
+}

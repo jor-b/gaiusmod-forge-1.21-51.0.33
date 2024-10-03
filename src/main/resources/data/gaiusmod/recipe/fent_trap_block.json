@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:iron_ingot"
+    },
+    "C": {
+      "item": "minecraft:copper_ingot"
+    },
+    "D": {
+      "item": "gaiusmod:hogblock"
+    }
+
+  },
+  "pattern": [
+    "BBB",
+    "CDC",
+    "CDC"
+  ],
+  "result": {
+    "count": 1,
+    "id": "gaiusmod:fent_trap_block"
+  }
+}

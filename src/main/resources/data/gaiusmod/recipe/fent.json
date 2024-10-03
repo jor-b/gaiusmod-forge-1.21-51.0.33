@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "ingredient": {
+    "item": "gaiusmod:unrefined_fent"
+  },
+  "result": {
+    "count": 1,
+    "id": "gaiusmod:fent"
+  },
+  "experience": 0.9,
+  "cookingtime": 200
+}

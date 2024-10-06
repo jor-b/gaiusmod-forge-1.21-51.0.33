@@ -2,5 +2,25 @@
   "parent": "minecraft:item/handheld",
   "textures": {
     "layer0": "gaiusmod:item/kiara_gun"
+  },
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [0, 90, -25],
+      "translation": [0, 3, -2]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [0, -90, 25],
+      "translation": [0, 3, -2]
+    },
+    "firstperson_righthand": {
+      "rotation": [0, 110, -30],
+      "translation": [-1, 3, -2],
+      "scale": [0.8, 0.8, 0.8]
+    },
+    "firstperson_lefthand": {
+      "rotation": [0, -110, 60],
+      "translation": [-1, 3, -2],
+      "scale": [0.8, 0.8, 0.8]
+    }
   }
 }

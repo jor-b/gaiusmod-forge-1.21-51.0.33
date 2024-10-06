@@ -62,7 +62,7 @@ public class fentCartItem extends Item {
             pContext.getItemInHand().hurtAndBreak(1, ((ServerLevel) level), (ServerPlayer) pContext.getPlayer(),
                     item -> pContext.getPlayer().onEquippedItemBroken(item, EquipmentSlot.MAINHAND));
 
-            level.playSound(null, pContext.getClickedPos(), SoundEvents.FOX_SNIFF, SoundSource.PLAYERS);
+            level.playSound(null, pContext.getClickedPos(), SoundEvents.FOX_SNIFF, SoundSource.NEUTRAL, 1.5f, 0.8f);
         }
         return InteractionResult.SUCCESS;
     }

@@ -1,8 +1,8 @@
 {
   "parent": "minecraft:block/cube_bottom_top",
   "textures": {
-    "bottom": "gaiusmod:block/fenttrap_side",
-    "side": "gaiusmod:block/fent_lab_block",
-    "top": "gaiusmod:item/fent"
+    "bottom": "gaiusmod:block/fentlab_bottom",
+    "side": "gaiusmod:block/fentlab_side",
+    "top": "gaiusmod:block/fentlab_top"
   }
 }

@@ -1,6 +1,7 @@
 package com.jonb.gaiusmod;
 
 import com.jonb.gaiusmod.block.ModBlocks;
+import com.jonb.gaiusmod.effect.ModEffects;
 import com.jonb.gaiusmod.entity.ModEntities;
 import com.jonb.gaiusmod.item.ModItems;
 import com.mojang.logging.LogUtils;
@@ -45,6 +46,7 @@ public class GaiusMod
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModEntities.register(modEventBus);
+        ModEffects.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -115,6 +117,10 @@ public class GaiusMod
 
         if(event.getTabKey() == CreativeModeTabs.COMBAT){
             event.accept(ModItems.KIARA_GUN);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.COMBAT){
+            event.accept(ModItems.FENT_GUN);
         }
     }
 

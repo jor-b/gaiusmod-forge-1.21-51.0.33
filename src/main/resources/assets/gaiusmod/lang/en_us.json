@@ -1,17 +1,21 @@
 {
   "item.gaiusmod.fent": "Fent",
   "item.gaiusmod.fent_cart": "Alibaba Fent Cart",
-  "block.gaiusmod.hogblock": "Hogblock",
-  "block.gaiusmod.fent_lab_block": "Fent Lab",
   "item.gaiusmod.unrefined_fent": "Unrefined Opioids",
   "item.gaiusmod.fent_spear": "Fent-tipped Spear",
   "item.gaiusmod.copper_shatterstick": "Copper Shatterstick",
   "item.gaiusmod.fent_syringe": "Fent Injector",
   "item.gaiusmod.fent_bag": "Fent-filled Bag",
-  "block.gaiusmod.fent_trap_block": "Fent Trap",
   "item.gaiusmod.shiv_rusty": "Homeless Man's Rusty Shiv",
   "item.gaiusmod.shiv_clean": "Shiv",
   "item.gaiusmod.hammer_clean": "dee z nusts",
-  "item.gaiusmod.kiara_gun": "Kiara's Gun"
+  "item.gaiusmod.kiara_gun": "Kiara's Gun",
+  "item.gaiusmod.fent_gun": "Fent Gun",
 
+  "block.gaiusmod.fent_trap_block": "Fent Trap",
+  "block.gaiusmod.fent_lab_block": "Fent Lab",
+  "block.gaiusmod.hogblock": "Hogblock",
+
+  "effect.gaiusmod.creamy": "Creamy",
+  "effect.gaiusmod.rot": "Rot"
 }

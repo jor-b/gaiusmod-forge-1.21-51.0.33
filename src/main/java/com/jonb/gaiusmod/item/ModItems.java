@@ -45,6 +45,9 @@ public class ModItems {
     public static final RegistryObject<Item> KIARA_GUN = ITEMS.register("kiara_gun",
             () -> new kiaraGunItem(new Item.Properties().durability(6)));
 
+    public static final RegistryObject<Item> FENT_GUN = ITEMS.register("fent_gun",
+            () -> new Item(new Item.Properties()));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

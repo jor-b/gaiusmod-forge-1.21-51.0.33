@@ -1,5 +1,6 @@
 package com.jonb.gaiusmod.item.custom;
 
+import com.jonb.gaiusmod.effect.ModEffects;
 import com.jonb.gaiusmod.item.ModItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -40,6 +41,7 @@ public static ItemAttributeModifiers createAttributes() {
     @Override
     public boolean hurtEnemy(ItemStack pStack, LivingEntity pTarget, LivingEntity pAttacker) {
         pTarget.addEffect(new MobEffectInstance(MobEffects.POISON, 100, 0, true, true, true));
+        pTarget.addEffect(new MobEffectInstance(ModEffects.CREAMY_EFFECT.getHolder().get(), 800, 0));
         return true;
     }
 

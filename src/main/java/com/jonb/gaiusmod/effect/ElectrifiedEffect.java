@@ -1,18 +1,22 @@
 package com.jonb.gaiusmod.effect;
 
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;
+import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.MobSpawnType;
 
-public class RotEffect extends MobEffect {
-    protected RotEffect(MobEffectCategory pCategory, int pColor) {
+public class ElectrifiedEffect extends MobEffect {
+    protected ElectrifiedEffect(MobEffectCategory pCategory, int pColor) {
         super(pCategory, pColor);
     }
 
 
     @Override
     public boolean applyEffectTick(LivingEntity pLivingEntity, int pAmplifier) {
-        pLivingEntity.hurt(pLivingEntity.damageSources().wither(), 3.0f * (pAmplifier + 1));
+        EntityType.LIGHTNING_BOLT.spawn((ServerLevel) , pLivingEntity.getOnPos(), MobSpawnType.TRIGGERED);
 
         return true;
     }

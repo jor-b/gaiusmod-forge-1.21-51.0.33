@@ -1,11 +1,10 @@
 package com.jonb.gaiusmod.item.custom;
 
 import net.minecraft.core.BlockPos;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.entity.EquipmentSlot;
-import net.minecraft.world.entity.EquipmentSlotGroup;
-import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.*;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.player.Player;
@@ -38,6 +37,7 @@ public static ItemAttributeModifiers createAttributes() {
 
     @Override
     public boolean hurtEnemy(ItemStack pStack, LivingEntity pTarget, LivingEntity pAttacker) {
+        EntityType.LIGHTNING_BOLT.spawn((ServerLevel) pAttacker.level(), pTarget.getOnPos(), MobSpawnType.TRIGGERED);
         return true;
     }
 

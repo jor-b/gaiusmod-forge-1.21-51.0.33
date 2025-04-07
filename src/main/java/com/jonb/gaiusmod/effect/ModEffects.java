@@ -30,7 +30,19 @@ public class ModEffects {
                     .addAttributeModifier(Attributes.MAX_HEALTH, ResourceLocation.fromNamespaceAndPath(GaiusMod.MOD_ID, "rot"),
                     -2.0, AttributeModifier.Operation.ADD_VALUE));
 
+    public static final RegistryObject<MobEffect> ELECTRIFIED_EFFECT = MOB_EFFECTS.register("electrified",
+            () -> new ElectrifiedEffect(MobEffectCategory.HARMFUL, 0xa3d4f0));
+
+    public static final RegistryObject<MobEffect> CRIPPLED_EFFECT = MOB_EFFECTS.register("crippled",
+            () -> new CrippledEffect(MobEffectCategory.HARMFUL, 0x1f1f1f)
+                    .addAttributeModifier(Attributes.MOVEMENT_SPEED, ResourceLocation.fromNamespaceAndPath(GaiusMod.MOD_ID, "creamy"),
+                            -0.85f, AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL)
+                    .addAttributeModifier(Attributes.JUMP_STRENGTH, ResourceLocation.fromNamespaceAndPath(GaiusMod.MOD_ID, "creamy"),
+                            -0.85f, AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL)
+                    .addAttributeModifier(Attributes.SAFE_FALL_DISTANCE, ResourceLocation.fromNamespaceAndPath(GaiusMod.MOD_ID, "creamy"),
+                            -2, AttributeModifier.Operation.ADD_VALUE));
+
     public static void register(IEventBus eventBus) {
-        MOB_EFFECTS.register((eventBus));
+        MOB_EFFECTS.register(eventBus);
     }
 }

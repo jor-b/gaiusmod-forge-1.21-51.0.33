@@ -1,5 +1,7 @@
 package com.jonb.gaiusmod.effect;
 
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.effect.MobEffect;
@@ -7,6 +9,7 @@ import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.MobSpawnType;
+import net.minecraft.world.level.Level;
 
 public class ElectrifiedEffect extends MobEffect {
     protected ElectrifiedEffect(MobEffectCategory pCategory, int pColor) {
@@ -16,7 +19,8 @@ public class ElectrifiedEffect extends MobEffect {
 
     @Override
     public boolean applyEffectTick(LivingEntity pLivingEntity, int pAmplifier) {
-        EntityType.LIGHTNING_BOLT.spawn((ServerLevel) , pLivingEntity.getOnPos(), MobSpawnType.TRIGGERED);
+        ServerLevel level = pLivingEntity.
+        EntityType.LIGHTNING_BOLT.spawn(level, pLivingEntity.getOnPos(), MobSpawnType.TRIGGERED);
 
         return true;
     }

@@ -13,7 +13,6 @@ public class CrippledEffect extends MobEffect {
     @Override
     public boolean applyEffectTick(LivingEntity pLivingEntity, int pAmplifier) {
         pLivingEntity.setShiftKeyDown(true);
-
         return true;
     }
 

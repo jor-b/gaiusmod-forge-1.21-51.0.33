@@ -19,11 +19,15 @@ public class ElectrifiedEffect extends MobEffect {
 
     @Override
     public boolean applyEffectTick(LivingEntity pLivingEntity, int pAmplifier) {
-        ServerLevel level = pLivingEntity.
-        EntityType.LIGHTNING_BOLT.spawn(level, pLivingEntity.getOnPos(), MobSpawnType.TRIGGERED);
+        if (pLivingEntity instanceof ServerPlayer serverplayer){
+            ServerLevel serverlevel = serverplayer.serverLevel();
+            EntityType.LIGHTNING_BOLT.spawn(serverlevel, pLivingEntity.getOnPos(), MobSpawnType.TRIGGERED);
+        }
+
 
         return true;
     }
+
 
     @Override
     public boolean shouldApplyEffectTickThisTick(int pDuration, int pAmplifier) {

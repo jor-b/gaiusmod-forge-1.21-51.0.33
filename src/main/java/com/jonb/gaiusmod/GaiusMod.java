@@ -5,7 +5,6 @@ import com.jonb.gaiusmod.effect.ModEffects;
 import com.jonb.gaiusmod.entity.ModEntities;
 import com.jonb.gaiusmod.item.ModItems;
 import com.mojang.logging.LogUtils;
-import net.minecraft.client.renderer.entity.EntityRenderer;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -116,7 +115,7 @@ public class GaiusMod
         }
 
         if(event.getTabKey() == CreativeModeTabs.COMBAT){
-            event.accept(ModItems.KIARA_GUN);
+            event.accept(ModItems.ROULETTE_GUN);
         }
 
         if(event.getTabKey() == CreativeModeTabs.COMBAT){

@@ -42,8 +42,8 @@ public class ModItems {
     public static final RegistryObject<Item> HAMMER_CLEAN = ITEMS.register("hammer_clean",
             () -> new hammerCleanItem(new Item.Properties().durability(256).attributes(hammerCleanItem.createAttributes())));
 
-    public static final RegistryObject<Item> KIARA_GUN = ITEMS.register("kiara_gun",
-            () -> new kiaraGunItem(new Item.Properties().durability(6)));
+    public static final RegistryObject<Item> ROULETTE_GUN = ITEMS.register("roulette_gun",
+            () -> new rouletteGunItem(new Item.Properties().durability(6)));
 
     public static final RegistryObject<Item> FENT_GUN = ITEMS.register("fent_gun",
             () -> new Item(new Item.Properties()));

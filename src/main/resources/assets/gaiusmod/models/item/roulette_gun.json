@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:item/handheld",
   "textures": {
-    "layer0": "gaiusmod:item/kiara_gun"
+    "layer0": "gaiusmod:item/roulette_gun"
   },
   "display": {
     "thirdperson_righthand": {

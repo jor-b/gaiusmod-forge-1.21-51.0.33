@@ -12,7 +12,7 @@ public class RotEffect extends MobEffect {
 
     @Override
     public boolean applyEffectTick(LivingEntity pLivingEntity, int pAmplifier) {
-        pLivingEntity.hurt(pLivingEntity.damageSources().wither(), 3.0f * (pAmplifier + 1));
+        pLivingEntity.hurt(pLivingEntity.damageSources().wither(), 3.0f * ((pAmplifier * 0.5f)+ 1));
 
         return true;
     }
